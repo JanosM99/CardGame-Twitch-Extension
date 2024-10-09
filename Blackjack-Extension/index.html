@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+  <title>Pepe Blackjack</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Logged out -->
+  <div id="logged_out">
+    <div id="loggedout_panel">
+        <p id="login_text">Pepe Blackjack</p>
+        <button id="login_button">Login</button>
+    </div>
+  </div>
+
+  <!-- Logged in -->
+  <div id="logged_in">
+    <!-- Bet options -->
+    <div class="bet_options_section">
+      <button id="left_side_bet">
+          <div class="bet_options_container">
+            <div id="leftSideBet">
+              <img id="left_side_bet_empty_img">
+              <span id="left_side_bet_text" class="bet_options_text">0</span>
+            </div>
+          </div>
+      </button>
+
+      <button id="bet">
+        <div class="bet_options_container">
+          <div id="betMiddle">
+            <img id="bet_empty_img">
+            <span id="bet_text" class="bet_options_text">0</span>
+          </div>
+        </div> 
+      </button>
+
+      <button id="right_side_bet">
+        <div class="bet_options_container">
+          <div id="rightSideBet">
+            <img id="right_side_bet_empty_img">
+            <span id="right_side_bet_text" class="bet_options_text">0</span>
+          </div>
+        </div>
+      </button>
+    </div>  
+
+    <!-- Chip -->
+    <div class="chip_button_group">
+      <button id="reset_button"></button>
+      <button id="bet_1">1</button>
+      <button id="bet_5">5</button>
+      <button id="bet_10">10</button>
+      <button id="bet_25">25</button>
+    </div>
+    
+    <!-- Bet -->
+    <div>
+      <button id="bet_button"></button>
+    </div> 
+  </div>
+
+  <!-- Hit or Stand -->
+  <div id="hit_or_stand_section">
+    <div id="hit_stand">
+      <button id="hit_button"></button>
+      <button id="stand_button"></button>
+    </div>
+  </div> 
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
